@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="#161616"/>
+  <rect x="4" y="4" width="504" height="504" rx="108" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="4"/>
+  <!-- speech bubble -->
+  <path fill="#F1F1F1" d="M164 116h184a72 72 0 0 1 72 72v112a72 72 0 0 1-72 72H230l-74 58a10 10 0 0 1-16-9l8-49h0a72 72 0 0 1-56-70V188a72 72 0 0 1 72-72z"/>
+  <!-- play + voice waves -->
+  <g transform="translate(-16 0)">
+    <path fill="#E53935" d="M188 196.5c0-13 14-21 25.3-14.5l78 45c11.2 6.5 11.2 22.5 0 29l-78 45c-11.3 6.5-25.3-1.5-25.3-14.5z"/>
+    <g fill="none" stroke="#161616" stroke-linecap="round" stroke-width="22">
+      <path d="M330 206a52 52 0 0 1 0 76"/>
+      <path d="M362 176a96 96 0 0 1 0 136"/>
+    </g>
+  </g>
+</svg>

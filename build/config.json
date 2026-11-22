@@ -1,0 +1,8 @@
+{
+  "original_package": "com.google.android.youtube.tv",
+  "original_version": "8.02.300",
+  "package": "app.votv.youtube",
+  "label": "YouTube VOTV",
+  "version_name": "8.02.300-votv.8",
+  "microg_package": "app.revanced.android.gms"
+}

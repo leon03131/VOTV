@@ -1,0 +1,49 @@
+name: release-plugins
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag name (e.g. v8.02.300-votv.8)'
+        required: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install dependencies
+        run: npm ci
+      - name: Build vot plugin
+        run: npm run build:vot
+      - name: Run Python and JS tests
+        run: |
+          python -m unittest discover -s tests -v
+          npm test
+      - name: Build bundle and manifest
+        env:
+          INPUT_TAG: ${{ github.event.inputs.tag }}
+        run: |
+          TAG="${INPUT_TAG:-${GITHUB_REF_NAME}}"
+          VER="${TAG#v}"
+          python plugins/bundle.py --manifest dist/release \
+            --version "$VER" \
+            --base-url "https://github.com/${{ github.repository }}/releases/download/${TAG}"
+      - name: Upload bundle.js and manifest.json to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.inputs.tag || github.ref_name }}
+          files: |
+            dist/release/bundle.js
+            dist/release/manifest.json

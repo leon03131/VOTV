@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180">
+  <rect width="320" height="180" fill="#161616"/>
+  <rect x="0" y="176" width="320" height="4" fill="#E53935"/>
+  <!-- mark: same shapes as icon.svg, 512 -> 88 px -->
+  <g transform="translate(24 46) scale(0.171875)">
+    <path fill="#F1F1F1" d="M164 116h184a72 72 0 0 1 72 72v112a72 72 0 0 1-72 72H230l-74 58a10 10 0 0 1-16-9l8-49h0a72 72 0 0 1-56-70V188a72 72 0 0 1 72-72z"/>
+    <g transform="translate(-16 0)">
+      <path fill="#E53935" d="M188 196.5c0-13 14-21 25.3-14.5l78 45c11.2 6.5 11.2 22.5 0 29l-78 45c-11.3 6.5-25.3-1.5-25.3-14.5z"/>
+      <g fill="none" stroke="#161616" stroke-linecap="round" stroke-width="22">
+        <path d="M330 206a52 52 0 0 1 0 76"/>
+        <path d="M362 176a96 96 0 0 1 0 136"/>
+      </g>
+    </g>
+  </g>
+  <text x="122" y="96" fill="#F1F1F1" font-family="Segoe UI Variable Display, Segoe UI, Arial" font-weight="600" font-size="42">VOTV</text>
+  <text x="124" y="119" fill="#F1F1F1" fill-opacity="0.62" font-family="Segoe UI Variable Text, Segoe UI, Arial" font-weight="400" font-size="11.5">YouTube · озвучка и SponsorBlock</text>
+</svg>

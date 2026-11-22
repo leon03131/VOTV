@@ -1,0 +1,25 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install plugin build dependencies (@vot.js/core, esbuild)
+        run: npm ci
+      - name: Build vot plugin
+        run: npm run build:vot
+      - name: Python tests (patches, bundler; build checks skip without a build)
+        run: python -m unittest discover -s tests -v
+      - name: JS tests (core runtime, bundle)
+        run: npm test

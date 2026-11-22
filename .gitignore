@@ -1,0 +1,17 @@
+# build outputs & inputs
+/work/
+/dist/
+/input/*.apk
+/tools/
+/keys/
+*.apk
+*.idsig
+# secrets
+*.jks
+*.keystore
+*.pass
+# python
+__pycache__/
+*.pyc
+node_modules/
+plugins/*/dist/

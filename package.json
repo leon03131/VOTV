@@ -1,0 +1,16 @@
+{
+  "name": "votv-plugins",
+  "private": true,
+  "description": "Build dependencies of the VOTV plugins (the vot plugin bundles @vot.js/core).",
+  "license": "GPL-3.0",
+  "type": "module",
+  "scripts": {
+    "build:vot": "node plugins/vot/build.mjs",
+    "test": "node --test tests/js/core.test.mjs tests/js/ui.test.mjs tests/js/plugins.test.mjs tests/js/vot.test.mjs tests/js/panel.test.mjs"
+  },
+  "devDependencies": {
+    "@vot.js/core": "3.2.4",
+    "@vot.js/shared": "3.2.4",
+    "esbuild": "0.28.2"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "core": [
+    "core/core.js",
+    "core/ui.js",
+    "core/panel.js"
+  ],
+  "plugins": [
+    {
+      "id": "emu",
+      "file": "emu/emu.js",
+      "enabled": true,
+      "devOnly": true
+    },
+    {
+      "id": "votv",
+      "file": "votv/votv.js",
+      "enabled": true
+    },
+    {
+      "id": "vot",
+      "file": "vot/dist/vot.js",
+      "build": "vot/build.mjs",
+      "enabled": true
+    },
+    {
+      "id": "adblock",
+      "file": "adblock/adblock.js",
+      "enabled": true
+    },
+    {
+      "id": "sponsorblock",
+      "file": "sponsorblock/sponsorblock.js",
+      "enabled": true
+    },
+    {
+      "id": "diag",
+      "file": "diag/diag.js",
+      "enabled": true
+    },
+    {
+      "id": "selftest",
+      "file": "selftest/selftest.js",
+      "enabled": false,
+      "devOnly": true
+    },
+    {
+      "id": "probe",
+      "file": "probe/probe.js",
+      "enabled": false,
+      "devOnly": true
+    },
+    {
+      "id": "sbtest",
+      "file": "sbtest/sbtest.js",
+      "enabled": false,
+      "devOnly": true
+    },
+    {
+      "id": "votest",
+      "file": "votest/votest.js",
+      "enabled": false,
+      "devOnly": true
+    }
+  ]
+}
