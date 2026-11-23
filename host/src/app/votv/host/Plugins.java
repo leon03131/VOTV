@@ -30,6 +30,7 @@ final class Plugins {
     private static final String PREFS = "votv_updates";
     private static final int MAX_BOOT_FAILS = 3;
     static final String DEFAULT_REPO = "leon03131/votv";
+    static final String DEFAULT_APK_URL = "https://sadthers.dev/votv/";
 
     private Plugins() {}
 
@@ -221,13 +222,13 @@ final class Plugins {
                 prefs(c).edit()
                         .putLong("lastCheckAt", System.currentTimeMillis())
                         .putString("latestApkVersion", tag)
-                        .putString("latestApkUrl", htmlUrl)
+                        .putString("latestApkUrl", DEFAULT_APK_URL)
                         .apply();
                 out.put("ok", true);
                 out.put("status", "no-manifest");
                 out.put("apkUpdateAvailable", apkNewer);
                 out.put("latestApkVersion", tag);
-                out.put("apkUrl", htmlUrl);
+                out.put("apkUrl", DEFAULT_APK_URL);
                 return out.toString();
             }
 
@@ -238,7 +239,7 @@ final class Plugins {
             String bundleUrl = mf.optString("bundleUrl", "");
             String sha256 = mf.optString("sha256", "");
             String remoteApk = mf.optString("apkVersion", tag);
-            String apkUrl = mf.optString("apkUrl", htmlUrl);
+            String apkUrl = mf.optString("apkUrl", DEFAULT_APK_URL);
             boolean apkNewer = isNewerVersion(remoteApk, curApp);
 
             prefs(c).edit()

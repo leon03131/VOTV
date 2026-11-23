@@ -94,7 +94,7 @@ def build_manifest(
     min_api: int = 4,
     bundle_url: str = "",
     apk_version: str = "",
-    apk_url: str = "https://github.com/leon03131/votv/releases/latest",
+    apk_url: str = "https://sadthers.dev/votv/",
 ) -> dict:
     sha256 = hashlib.sha256(bundle_text.encode("utf-8")).hexdigest()
     return {
@@ -123,7 +123,7 @@ if __name__ == "__main__":
     ap.add_argument("--apk-version", default="")
     ap.add_argument("--min-api", type=int, default=4)
     ap.add_argument("--base-url", default="https://github.com/leon03131/votv/releases/latest/download")
-    ap.add_argument("--apk-url", default="https://github.com/leon03131/votv/releases/latest")
+    ap.add_argument("--apk-url", default="https://sadthers.dev/votv/")
     ns = ap.parse_args()
 
     bundle_text = build(dev=ns.dev)

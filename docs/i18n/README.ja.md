@@ -19,7 +19,7 @@
 
 公式 **YouTube for Android TV (8.02.300)** 向けパッチ＆JavaScript プラグイン集：Yandex 音声吹替、SponsorBlock、広告削除に対応しています。
 
-[sadthers.dev](https://sadthers.dev) · [プラグインリリース](https://github.com/leon03131/votv/releases) · [CI テスト](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](../../LICENSE)
+[sadthers.dev/votv](https://sadthers.dev/votv/) · [プラグインリリース](https://github.com/leon03131/votv/releases) · [CI テスト](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](../../LICENSE)
 
 ---
 
@@ -47,7 +47,7 @@
 
 ## APK とビルド
 
-GitHub にはソースコード、パッチ、JS プラグインバンドル（`bundle.js`、`manifest.json`）のみを公開しています。ビルド済み APK は [sadthers.dev](https://sadthers.dev) にて配布予定です。
+署名済みのビルド済み APK（`arm`、`arm64`、`x86`）は **[sadthers.dev/votv](https://sadthers.dev/votv/)** からダウンロードできます。GitHub にはソースコード、パッチ、JS プラグインバンドル（`bundle.js`、`manifest.json`）のみを公開しています。
 
 **ローカルビルド手順**（Python 3.10+, Node.js 20+, JDK 17+, Android SDK build-tools 35+）：
 1. `git clone https://github.com/leon03131/votv.git && cd votv`

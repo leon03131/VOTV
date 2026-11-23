@@ -19,7 +19,7 @@
 
 تعديلات وإضافات JavaScript لتطبيق **YouTube for Android TV (8.02.300)** الرسمي: الدبلجة الصوتية من Yandex، و SponsorBlock، وإزالة الإعلانات.
 
-[sadthers.dev](https://sadthers.dev) · [إصدارات الإضافات](https://github.com/leon03131/votv/releases) · [اختبارات CI](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](../../LICENSE)
+[sadthers.dev/votv](https://sadthers.dev/votv/) · [إصدارات الإضافات](https://github.com/leon03131/votv/releases) · [اختبارات CI](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](../../LICENSE)
 
 ---
 
@@ -47,7 +47,7 @@
 
 ## ملفات APK والبناء
 
-يستضيف GitHub الكود المصدري والتعديلات وحزم JS فقط (`bundle.js` و `manifest.json`). سيتم نشر ملفات APK الجاهزة على [sadthers.dev](https://sadthers.dev).
+ملفات APK الجاهزة والموقعة (`arm` و `arm64` و `x86`) متاحة للتنزيل على **[sadthers.dev/votv](https://sadthers.dev/votv/)**. يستضيف GitHub الكود المصدري والتعديلات وحزم JS فقط (`bundle.js` و `manifest.json`).
 
 **البناء المحلي** (Python 3.10+ و Node.js 20+ و JDK 17+ و Android SDK build-tools 35+):
 1. `git clone https://github.com/leon03131/votv.git && cd votv`

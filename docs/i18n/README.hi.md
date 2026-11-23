@@ -19,7 +19,7 @@
 
 आधिकारिक **YouTube for Android TV (8.02.300)** के लिए पैच और JavaScript प्लगइन्स: Yandex वॉइस-ओवर अनुवाद, SponsorBlock और विज्ञापन हटाना।
 
-[sadthers.dev](https://sadthers.dev) · [प्लगइन रिलीज़](https://github.com/leon03131/votv/releases) · [CI टेस्ट](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](../../LICENSE)
+[sadthers.dev/votv](https://sadthers.dev/votv/) · [प्लगइन रिलीज़](https://github.com/leon03131/votv/releases) · [CI टेस्ट](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](../../LICENSE)
 
 ---
 
@@ -47,7 +47,7 @@
 
 ## APK और बिल्ड
 
-GitHub पर केवल सोर्स कोड, पैच और JS प्लगइन बंडल (`bundle.js`, `manifest.json`) उपलब्ध हैं। तैयार APK [sadthers.dev](https://sadthers.dev) पर प्रकाशित किए जाएँगे।
+तैयार हस्ताक्षरित APK (`arm`, `arm64`, `x86`) **[sadthers.dev/votv](https://sadthers.dev/votv/)** पर उपलब्ध हैं। GitHub पर केवल सोर्स कोड, पैच और JS प्लगइन बंडल (`bundle.js`, `manifest.json`) उपलब्ध हैं।
 
 **स्थानीय बिल्ड** (Python 3.10+, Node.js 20+, JDK 17+, Android SDK build-tools 35+):
 1. `git clone https://github.com/leon03131/votv.git && cd votv`

@@ -19,7 +19,7 @@
 
 Patches and JavaScript plugins for official **YouTube for Android TV (8.02.300)**: Yandex voice-over translation, SponsorBlock, and ad removal.
 
-[sadthers.dev](https://sadthers.dev) · [Plugin Releases](https://github.com/leon03131/votv/releases) · [CI Tests](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](../../LICENSE)
+[sadthers.dev/votv](https://sadthers.dev/votv/) · [Plugin Releases](https://github.com/leon03131/votv/releases) · [CI Tests](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](../../LICENSE)
 
 ---
 
@@ -59,7 +59,9 @@ Patches and JavaScript plugins for official **YouTube for Android TV (8.02.300)*
 
 ## Prebuilt APKs
 
-This repository and GitHub Releases distribute only source code, patches, and JS plugin bundles (`bundle.js`, `manifest.json`). Prebuilt APKs are hosted separately at [sadthers.dev](https://sadthers.dev).
+Prebuilt signed APKs (`arm`, `arm64`, `x86`) are available at **[sadthers.dev/votv](https://sadthers.dev/votv/)**.
+
+This repository and GitHub Releases distribute only source code, patches, and JS plugin bundles (`bundle.js`, `manifest.json`).
 
 ## Build
 

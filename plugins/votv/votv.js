@@ -23,7 +23,7 @@ __votv.define('votv', (votv) => {
       return `Версия ${i.app || '?'} · хост ${i.host || '?'} (API ${i.api || '?'})${i.dev ? ' · режим разработчика' : ''}. ` +
         `Плагины: ${plugins.join(', ') || '—'}. ` +
         'Перевод: voice-over-translation (ilyhalight) и vot.js (FOSWLY). Пропуск вставок: SponsorBlock. ' +
-        'github.com/leon03131/votv';
+        'sadthers.dev/votv · github.com/leon03131/votv';
     },
   });
 
@@ -53,7 +53,7 @@ __votv.define('votv', (votv) => {
         votv.toast(`Плагины обновлены до ${r.pluginVersion} · перезагрузка…`, 3000);
         setTimeout(() => { try { window.VotHost && window.VotHost.reload(); } catch (e) {} }, 1500);
       } else if (r && r.apkUpdateAvailable) {
-        votv.toast(`Доступен новый APK ${r.latestApkVersion} на GitHub Releases`, 6000);
+        votv.toast(`Доступен новый APK ${r.latestApkVersion} на sadthers.dev/votv`, 6000);
       } else if (!silent) {
         votv.toast(r && r.ok ? 'Установлена актуальная версия VOTV' : `Обновление: ${(r && r.error) || 'ошибка'}`, 4000);
       }
@@ -69,7 +69,7 @@ __votv.define('votv', (votv) => {
     heading: () => `Плагины: ${votv.info.pluginVersion || votv.info.app || '?'} (${sourceLabel()})`,
     actionLabel: 'Проверить',
     action: { type: 'checkUpdate' },
-    description: () => 'Скачивает обновления плагинов и проверяет новые версии APK на GitHub Releases.',
+    description: () => 'Скачивает обновления плагинов с GitHub и проверяет новые версии APK (sadthers.dev/votv).',
   });
   ui.onAction('checkUpdate', () => { runUpdateCheck(false); });
 
@@ -115,7 +115,7 @@ __votv.define('votv', (votv) => {
       const rows = [
         { kind: 'info', id: 'ver', label: 'Версия', hint: `APK ${votv.info.app || '?'} · источник: ${sourceLabel()}`, value: votv.info.pluginVersion || votv.info.app || '?' },
         { kind: 'button', id: 'check', label: updateState.checking ? 'Проверяем обновления…' : 'Проверить обновления',
-          hint: r && r.apkUpdateAvailable ? `Доступен новый APK: ${r.latestApkVersion}` : 'GitHub Releases (leon03131/votv)',
+          hint: r && r.apkUpdateAvailable ? `Доступен новый APK: ${r.latestApkVersion} (sadthers.dev/votv)` : 'Плагины: GitHub · APK: sadthers.dev/votv',
           disabled: updateState.checking,
           onPress: () => runUpdateCheck(false) },
       ];

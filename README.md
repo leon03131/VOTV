@@ -19,7 +19,7 @@
 
 Патчи и JavaScript-плагины для официального **YouTube для Android TV (8.02.300)**: закадровый перевод Яндекса, SponsorBlock и отключение рекламы.
 
-[sadthers.dev](https://sadthers.dev) · [Релизы плагинов](https://github.com/leon03131/votv/releases) · [Тесты CI](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](LICENSE)
+[sadthers.dev/votv](https://sadthers.dev/votv/) · [Релизы плагинов](https://github.com/leon03131/votv/releases) · [Тесты CI](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](LICENSE)
 
 ---
 
@@ -59,7 +59,9 @@
 
 ## Готовые APK
 
-В репозитории и GitHub Releases публикуются только исходный код, патчи и бандл JS-плагинов (`bundle.js`, `manifest.json`). Готовые APK здесь не размещаются по соображениям авторских прав — они будут выложены на [sadthers.dev](https://sadthers.dev).
+Готовые подписанные APK (`arm`, `arm64`, `x86`) доступны на **[sadthers.dev/votv](https://sadthers.dev/votv/)**.
+
+В репозитории и GitHub Releases публикуются только исходный код, патчи и бандл JS-плагинов (`bundle.js`, `manifest.json`) без проприетарных библиотек YouTube.
 
 ## Сборка
 

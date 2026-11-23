@@ -19,7 +19,7 @@
 
 面向官方 **YouTube for Android TV (8.02.300)** 的补丁与 JavaScript 插件集合：集成 Yandex 语音配音、SponsorBlock 片段跳过和去广告功能。
 
-[sadthers.dev](https://sadthers.dev) · [插件发布](https://github.com/leon03131/votv/releases) · [CI 测试](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](../../LICENSE)
+[sadthers.dev/votv](https://sadthers.dev/votv/) · [插件发布](https://github.com/leon03131/votv/releases) · [CI 测试](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](../../LICENSE)
 
 ---
 
@@ -47,7 +47,7 @@
 
 ## 下载与构建
 
-GitHub 仅托管源码、补丁和 JS 插件包（`bundle.js`、`manifest.json`）。成品 APK 将发布在 [sadthers.dev](https://sadthers.dev)。
+已签名的成品 APK（`arm`、`arm64`、`x86`）可在 **[sadthers.dev/votv](https://sadthers.dev/votv/)** 下载。GitHub 仅托管源码、补丁和 JS 插件包（`bundle.js`、`manifest.json`）。
 
 **本地构建**（需 Python 3.10+、Node.js 20+、JDK 17+、Android SDK build-tools 35+）：
 1. `git clone https://github.com/leon03131/votv.git && cd votv`

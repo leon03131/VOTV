@@ -19,7 +19,7 @@
 
 Patches und JavaScript-Plugins für das offizielle **YouTube für Android TV (8.02.300)**: Yandex-Sprachübersetzung, SponsorBlock und Werbeentfernung.
 
-[sadthers.dev](https://sadthers.dev) · [Plugin-Releases](https://github.com/leon03131/votv/releases) · [CI-Tests](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](../../LICENSE)
+[sadthers.dev/votv](https://sadthers.dev/votv/) · [Plugin-Releases](https://github.com/leon03131/votv/releases) · [CI-Tests](https://github.com/leon03131/votv/actions/workflows/test.yml) · YouTube TV `8.02.300` · [GPL-3.0](../../LICENSE)
 
 ---
 
@@ -47,7 +47,7 @@ Patches und JavaScript-Plugins für das offizielle **YouTube für Android TV (8.
 
 ## APKs & Build
 
-Auf GitHub liegen ausschließlich Quellcode, Patches und JS-Plugin-Bundles (`bundle.js`, `manifest.json`). Fertige APKs erscheinen auf [sadthers.dev](https://sadthers.dev).
+Signierte fertige APKs (`arm`, `arm64`, `x86`) stehen unter **[sadthers.dev/votv](https://sadthers.dev/votv/)** zum Download bereit. Auf GitHub liegen ausschließlich Quellcode, Patches und JS-Plugin-Bundles (`bundle.js`, `manifest.json`).
 
 **Lokaler Build** (Python 3.10+, Node.js 20+, JDK 17+, Android SDK build-tools 35+):
 1. `git clone https://github.com/leon03131/votv.git && cd votv`
